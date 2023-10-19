@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generacion Avatar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cont-general">
+        <div class="left">
+            <h2>REGISTRO JUGADOR</h2>
+            <input type="file" accept=".jpg, .pnp" id="foto" placeholder="Ingrese el primer valor">
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+            <input type="email" id="email" placeholder="Ingrese su email">
+            <input type="text" id="userName" placeholder="Ingrese el userName">
+            <select id="rol">
+                <option value="">Seleccione un rol</option>
+                <option value="uno">uno</option>
+                <option value="dos">dos</option>
+            </select>
+            <input type="text" id="color" placeholder="Ingrese un color">
+            <button onclick="avatarFull()">Generar</button>
+        </div>
+        <div class="right">
+            <h2>AVATAR GENERADO</h2>
+            <div class="cont-avatar">
+                <img id="imagen" src="img/images.jfif" id="foto-avatar-show" alt="">
+                <div class="datos">
+                    <h3 id="userName-show">Username</h3>
+                    <h4 id="rol-show">Rol</h4>
+                    <p id="skills-show">HABILIDADES DEL JUGADOR</p>
+
+                    <div >
+                        <img id="foto2" src="img/descarga.png" id="foto-user-show" alt="">
+                        <p id="Nombre-show">NOMBRES Y APELLIDOS</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+    <script  src="js/main.js"></script>
+</body>
+</html>
